@@ -1,5 +1,5 @@
 MEMBUAT ANIMASI CSS
-properti css animation digunakan untuk membuat elemen bertransisi dari satu set properti ke set  properti lainnya.
+properti, css animation digunakan untuk membuat elemen bertransisi dari satu set properti ke set  properti lainnya.
 untuk menganimasikan css dengan benar, anda harus menentukan keyframe yang menentukan status awal dan akhir animasi.
 
 ANIMASI ROTASI
