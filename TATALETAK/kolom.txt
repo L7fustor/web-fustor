@@ -1,0 +1,59 @@
+MEMBUAT TATA LETAK
+properti singkatan css colums digunakan untuk menentukan jumlah kolom dan lebarnya dalam satu deklarasi. properti 
+column-width dan column-count dapat dideklarasikan secara terpisah juga.
+
+ CONTOH: 
+
+ .col {
+    column-count: 4;
+ }
+
+ contoh berikut dengan menggunakan columns singkatan css untuk menetapkan kedua properti dalam satu deklarasi. kami
+ menetapkan tata letak css dengan 3 kolom dan yang lainnya dengan empat kolom.
+
+ CONTOH:
+
+ .news1 {
+    columns: 100px 3;
+ }
+
+
+RUANG ANTAR KOLOM 
+menggunakan properti column-gap
+menciptakan ruang antarkolom anda dapat mendeskripsikan nilainya dengan menggunakan indikator panjang reguler 
+( pt, px, cm, dll ) atau normal kata kunci ( 1 em gap ).
+
+
+GARIS VERTIKAL ANTAR KOLOM
+menggunakan properti column-rule 
+adalah properti singkat untuk menambahkan pemisah vertikal diantara kolom. properti ini mendefinisikan column-rule-style,
+column-rule-width, dan column-rule-color dalam satu deklarasi.
+
+column-rule-style           mengatur  gaya garis ( padat, putus2, dsb)
+column-rule-width          mengatur ketebalan garis ( kata kunci seperti thin atau indikator panjang seperti 9px )
+column-rule-color           mengatur garis warna
+
+
+ELEMEN RENTANG DALAM KOLOM
+dimungkinkan untuk membuat membentang melintasi kolom. elemen tersebut column-span memiliki 2 nilai:
+
+all         elemen meluas melintasi kolom.
+none      ditetapkan jika diperlukan untuk mencegah elemen saling tumpah tindih.
+
+
+MENGATUR LEBAR KOLOM 
+menggunakan properti column-width
+untuk menetapkan lebar yang  unik untuk semua kolom. peramban kemudian menetukan berapa banyak kolom yang dapat
+dimuat dalam lebar yang ditentukan. jika lebar kolom css terlalu kecil untuk memuat setidaknya dua kolom, konten
+disajikan dalam satu kolom.
+
+
+MENGATUR CARA KONTEN MENGISI KOLOM 
+menggunakan properti column-fill
+digunakan untuk mengatur dan menyeimbangkan konten dalam kolom. fungsi ini menerima dua nilai:
+
+balance         setiap kolom memiliki jumlah konten yang sama ( tidak bisa lebih tinggi dari tinggi yang ditentukan )
+auto              mengatur konten ke dalam kolom hingga mencapai tinggi. tindakan ini dilakukan hingga konten berakhir
+
+
+DAFTAR LENGKAP 
