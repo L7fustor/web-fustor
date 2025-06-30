@@ -1,0 +1,75 @@
+MEMBUAT ANIMASI CSS
+properti css animation digunakan untuk membuat elemen bertransisi dari satu set properti ke set  properti lainnya.
+untuk menganimasikan css dengan benar, anda harus menentukan keyframe yang menentukan status awal dan akhir animasi.
+
+ANIMASI ROTASI
+anda dapat membuat animasi rotasi css dengan memanipulasi spin efeknya. contoh berikut menetapkan animasi rotasi css 
+untuk sebuah gambar:
+
+CONTOH:
+
+.image {
+   position: absolute;
+   animation: spin 6s linear infinite;
+}
+
+PENUNDAAN ANIMASI
+menggunakan properti animation-delay menentukan berapa lama waktu yang dibutuhkan hingga animasi dimulai. nilai default
+adalah 0, yang berarti animasi  dimulai segera setelah halaman dimuat.
+
+ANIMASI--ITERASI-HITUNG
+menggunakan properti animation-iteration-count menentukan berapa kali animasi dijalankan.
+nilai yang bisa digunakan bermacam macam, dan agar animasi tidak pernah  berakhir bisa pakai nilai infinite.
+
+ARAH ANIMASI 
+menggunakan properticss animation-direction menunjukkan apakah animasi diputar mundur, maju, atau bergantian antara
+maju dan mundur.
+
+nilai yang bisa digunakan:
+reverse           animasi berjalan mundur
+alternate        animasi berjalan maju lalu mundur
+alternate-       animasi akan berjalan mundur lalu maju 
+reverse
+
+FUNGSI PENGATURAN WAKTU ANIMASI
+menggunakan properti css animation-timing-function menentukan kurva kecepatan animasi css.
+
+nilai yang bisa digunakan:
+ease            transisi berlangsung lebih lambat di awal, menjadi cepat ditengah, lalu berkahir lambat.
+linear          kecepatannya tetap sama sepanjang seluruh transisi.
+ease-in         transisi dimulai secara perlahan, kemudian menjadi lebih cepat.
+ease-in-out     suatu transisi dimulai dan diakhiri secara perlahan.
+cubic-bezier    kurva kecepatan transisi ditentukan secara spesifik oleh anda.
+(n,n,n,n)
+
+MODE PENGISIAN ANIMASI
+menggunakan properti css animation-fill-mode menetapkan cara animasi css memengaruhi gaya target sebelum dan 
+sesudah animasi berkahir.
+
+nilai yang bisa digunakan:
+none              default, animasi tidak memengaruhi gaya elemen baik sebelum maupun setelah menjalankan animasi.
+forwards       nilai gaya bingkai utama animasi terakhir diterapkan ke elemen.
+backwards     nilai gaya bingkai utama  animasi pertama diterapkan ke elemen dan disimpan selama periode penundaan 
+                     animasi.
+both              animasi mengikuti aturan mode pengisian animasi maju dan mundur.
+
+ANIMAASI PUTAR STATUS 
+menggunakan properti animation-play-state
+
+SINGKATAN YANG BERNYAWA:
+animation singkatan css mendeklarasikan smeua properti tangan panjang dalam satu deklarasi.
+
+CONTOH:
+
+div {
+   animation-name: learn;
+   animation-duration: 6s;
+   animation-timing-function: ease;
+   animation-delay: 3s;
+   animation-iteration-count: 5;
+   animation-direction: reverse;
+   border-radius: 90px;
+}
+
+singkatan:
+animation: name duration timing-function delay iiteration-count direction

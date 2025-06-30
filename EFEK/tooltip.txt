@@ -1,0 +1,143 @@
+TOOLTIP
+memungkinkan untuk membuat tooltip css murni untuk suatu elemen. namun, langkah pertama adalah membuat tooltip
+html dengan menetapkan kelas ke elemen yang akan memiliki tooltip tersebut.
+kemudian, anda menggunakan properti penataan gaya ke css tooltip yang disajikan dalam contoh berikut memiliki 
+properti position, color, dan display.
+
+contoh: 
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 100px;
+    background-color: #8512d5;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext  {
+    visibility: visible;
+}
+
+STEP BY STEP YANG HARUS DIIKUTI UNTUK MEMBUAT TOOLTIP CSS murni
+
+dengan html, kita hanya menambahkan elemen dengan teks css mengatur posisi, warna, dan properti lainnya untuk
+tooltip.
+
+    - kita tetapkan position dan relative ke elemen dengan tooltip kelas.
+    - kami memposisikan teks didialam tooltip dengan position: absolute.
+    - elemen dengan tooltiptext kelas tersebut memiliki teks didalam tooltip. teks tersebut disembunyikan 
+      hingga :hover dipicu.
+    - css memberi gaya pada tooltip html dengan menunjukkan lebarnya, dan warna latar belakang.
+    - teks didalam tooltip dipusatkan dan memiliki pengaturan bantalan tertentu.
+    - radius batas membulatkan sudut2 keterangan alat html.
+
+PENEMPATAN
+anda dapat menempatkan tooltip css disalah satu dari empat elemen html.
+
+TOOLTIP KANAN 
+contoh berikut menempatkan alat di sisi kanan teks yang dapat diarahkan dengan menggunakan left properti dengan
+positon: relative (untuk memindahkannya ke kanan).
+
+CONTOH: 
+
+.tooltip-ex-right {
+    top: -5px;
+    left: 125%;
+}
+
+dengan  meningkatkan padding. anda mugkin perlu meningkatkan nilai properti top untuk memastikannya tetap
+terpusat secara vertikal.
+
+tooltip di sisi kiri melibatkan penggunaan right dengan position: relative
+
+contoh: .tooltiptext {
+    top: -10px;
+    right: 110%;
+}
+
+TOOLTIP TERATAS 
+
+CONTOH: 
+
+.tooltip .tooltiptext {
+    width: 100px;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -50pxx;
+}
+
+TOOLTIP BAWAH
+
+CONTOH: 
+
+.tooltip .tooltiptext {
+    width: 100px;
+    top: 100%;
+    left: 50%;
+    margin-left: -50pxx;
+}
+
+MEMBUAT PANAH
+anda dapat membuat panah untuk tooltip di css dengan menggabungkan ::after pseudo elemen dengan properti kosong
+content. hasilnya, tooltip menyerupai gelembung ucapan.
+
+CONTOH: 
+
+.tooltip .tooltiptext {
+    content: " ";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -10px;
+    border-wifth: 10px;
+    border-style: solid;
+    border-color: black transparent  transparent transparent;
+}
+
+contoh diatas mengikuti langkah langkah berikut untuk membuat panah untuk keterangan alat yang diposisikan
+bagian bawah:
+
+    -   tidak ada properti unik untuk membuat panah pada tooltip. oleh karena itu, kita akan menggantikan 
+        properti border.
+    -   kita perlu memposisikan panah dibagian bawah dengan menyetel top: 100%
+    -   baigan left: 50% kode memusatkan keterangan alat.
+    -   mengatur border-width ukuran anak panah, jika anda mengubah ukuran, anda juga perlu mengubah
+        margin-left agar anak panah tetap berada ditengah.
+    -   mengatur border-color anak panah, anda  hanya boleh menentukan batas atas dan membiarkan batas
+        lainnya transparan.
+    -   anda harus meyetel border-sytle untuk menentukan tampilan batas. contoh ini menggunakan solid nilai
+
+
+ANIMASI FADE IN 
+tanpa properti tambahan, kotak keterangan alat akan muncul tiba2 namun, properti gaya transisi dan opasitas
+membuat keterangan alat memudar secara bertahap.
+
+dalam contoh ini, kita menciptakan efek fade in yang halus:
+
+.tooltip .tooltiptext {
+    opacity: 0%;
+    transition: opacity 3s;
+}
+
+.tooltip:hover .tooltiptext {
+    opacity: 1;
+}
+
+    -   kita perlu mengatur opacity: 0 kapan tooltip disembunyikan.
+    -   properti transition harus menunjukkan durasi animasi.
+    -   kita perlu menambahkan opacity: 1 keterangan alat untuk kapan :hover pemicunya.
+
+TIPS BERGUNA
+
+    -   salah satu kekhawatiran tentang penggunaan tooltipl adalah bahwa pengguna perangkat seluler mungkin 
+        tidak dapat menggunakan fitur ini.
+    -   anda dapat membuat tooltip dengan menggunakan sumber daya bootstrap.

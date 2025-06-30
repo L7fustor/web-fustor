@@ -1,0 +1,75 @@
+PERATAAN HORIZONTAL CSS 
+
+MENYELARASKAN ELEMEN SEBARIS
+elemen dan teks sebaris adalah yang paling mudah untuk disejajarka. anda dapat melakukannya dengan menggunakan 
+properti text-align.
+nilai yang bisa digunakan:
+
+center      nilai default, membuat css memusatkan elemen dalam wadah
+left          membuat css menyelaraskan elemen di sisi kiri wadah
+right        membuat css menyelaraskan elemen di sisi kanan wadah
+justify     membuat ruang css menjadi konten yang mengisi wadah dari ujung ke ujung
+start       berfungsi seperti left saat arah teks dari kiri ke kanan dan seperti right saat teks dari kanan  ke kiri
+end          berfungsi seperti right saat arah teks dari kiri ke kanan dan seperti left saat arah teks dari kanan ke kiri
+
+
+MENGGUNAKAN MARGIN UNTUK ELEMEN BLOK
+untuk membuart css memusatkan atau menyelaraskan elemen blok, atur margin kiri dan kanannya menjadi auto.
+untuk dapat melakukan hal yang sama pada elemen apapun, anda dapat menerapkan properti display, dengan nilai yang 
+ditetapkan ke block padanya. mislnya untuk memusatkan gambar secara horizontal.
+
+
+MENGUBAH POSISI
+jika anda hanya memiliki satu elemen dalam wadah. anda juga dapat menyelaraskannya secara horizontal dengan 
+menggunakan properti posisi. jika anda menentukan absolute nilainya, posisi akan tetap, yang berarti bahwa elemen
+tersebut dapat tumpah tindih dengan elemen lain untuk mempertahankan tempatnya saat pengguna mengubah ukuran
+jendela atau menggulir.
+
+
+MEMBUAT ELEMEN MENGAPUNG
+anda juga dapat menyelaraskan elemen menggunakan float
+properti float ini berbeda dari posisi absolute dalam dua aspek. 
+
+pertama, properti ini menempatkan elemen pada sisi
+wadah yang ditentukan sehingga teks dan elemen sebaris lainnya dapat membungkusnya.
+kedua, elemen yang mengambang dihapus dari alur normal halaman. namun, elemen tersbut tetap menjadi bagian dari alur 
+dalam artian elemen lain tidak mengabaikannya sepenuhnya ( yang mereka lakukan untuk elemen yang diposisikan secara
+absolut ).
+bila anda mengapungkan gambar atau elemen lain yang tingginya lebih besar dari wadahnya. elemen tersebut akan 
+melampaui batas wadahnya. anda dapat mencegah hal ini dengan menerapkan properti overflow dengan nilai yang ditetapkan
+ke auto.
+
+
+
+PERATAAN VERTIKAL CSS
+
+ELEMEN  SEBARIS DAN PERATAAN VERTIKAL
+metode css perataan vertikal dapat digunakan untuk elemen SEBARIS
+
+
+PEMUSATAN DENGAN BANTALAN
+sama seperti margin yang dapat digunakan untuk perataan horizontal, padding dapat membantu anda memusatkan elemen 
+secara vertikal. yang perlu anda lakukan adalah menerapkan padding berukuran sama dibagian atas dan bawah elemen.
+pilihan ini bagus jika anda tidak yakin tentang dimensi elemen yang sebenarnya dan karena itu tidak dapat menghitung 
+dimana tepatnya titik tengahnya.
+untuk memusatkan teks baik secara vertikal maupun horizontal, anda dapat menggabungkan padding dengan text-align
+center.
+
+
+MENYELARASKAN DENGAN TINGGI BARIS 
+anda juga dapat memusatkan elemen secara vertikal dengan menyetel niliai line height agar sama dengan height elemen.
+ini memberikan efekk yang sama seperti meyetel padding yang sama.
+perlu diingat bahwa metode ini hanya cocok jika anda memiliki satu baris teks untuk dipusatkan. namun, metode ini mungkin
+bekerja lebih baik untuk font tertentu. karena metode ini menetapkan garis dasar dengan benar. itu memastikan teks
+tampak tepat ditengah. namun, argumen ini hanya berlaku jika anda menetapkannya menggunakan nilai piksel.
+
+
+MENGGABUNGKAN POSISI DAN TRANSFORMASI
+satu cara lagi untuk memusatkan elemen secara vertikal adalah dengan menggunakan position dan mengubah secara
+bersamaan. mungkin ada situasi dimana keduanya padding tidak line height cocok. misalnya, jika wadah anda memiliki  lebar
+tetap dan beberapa baris teks.
+
+TIPS BERGUNA
+- anda akan lebih mudah menyelaraskan elemen jika anda belajar bekerja dengan flexbox.
+- jika anda ingin sekelompok elemen disatukan dan disejajarkan sebagai satu kesatuan, kelompokkan elemen elemen 
+   tersebut dengan membungkusnya dalam wadah yang sama. misalnya, anda dapat memusatkan wadah div seperti blok biasa.

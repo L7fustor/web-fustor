@@ -1,0 +1,113 @@
+TRANSSFORM
+dengan menggunakan properti dcss, anda dapat membuat elemen mengubah tampilannya, properti ini berfungsi
+dengan sebagian besar elemen html, kecuali, elemen yang tidak dikontrol oleh model kotak. selain itu, 
+transform properti ini tidak dapat berfungsi dengan kotak sebaris, grup kolom tabel, dan kolom tabel yang
+tidak diganti. 
+properti transform hanya menerima dua nilai: satu fungsi transformasi spesifik atau none (menunjukkan bahwa 
+tansformasi tidak berlaku).
+
+
+TRANSFORMASI MENERJEMAHKAN
+menggunakan properti transform: translate digunakan untuk memindahkan elemen ke sisi kiri atau kanan, atau
+ke atas dan kebawah. properti ini menerima dua nilai:
+
+  - satu nilai berarti elemen akan digeser ke atas dan ke bawah atau kesamping. ingat bahwa nilai negatif
+    akan menggerakkan elemen ke kiri, sedangkan nilai positif akan menggerakkan elemen ke kanan.
+  - nilai kedua mendorong elemen ke bawah. nilai negatif menggerakkannya ke bawah.
+
+CONTOH:
+
+div {
+    width: 80px;
+    height: 80px;
+    background-color: green;
+}
+
+.example1 {
+    backgorund-color: purple;
+    color: white;
+    border-radius: 5px;
+    transform: translate(20px, 50px);
+}
+
+anda juga dapat memindahkan elemen sepanjang sumbu horizontal atau vertikal. translateY memindahkan elemen
+secara vertikal, sementara translateY mendorongnya secara horizontal.
+
+anda juga dapat memindahkan elemen dalam ruang 3d dengan menggunakan css transform: translate3d atau translateZ
+fungsi fungsi ini menciptakan efek bahwa elemen elemen bergerak lebih dekat atau lebih jauh dari pengguna.
+
+
+TRANSFORMASI SKALA
+menggunakan properti transform: scale() untuk skala elemen.
+jika satu nilai ditetapkan, elemen akan menskalakan sejumlah kali ukuran aslinya. saat anda menetapkan dua
+nilai, elemen akan merengang secara horizontal sesuai dengan nilai kedua.
+
+nilai yang bisa diberikan untuk properti:
+
+  scaleX    untuk mengubah ukuran secara horizontal 
+  scaleY    untuk mengubah elemen secara vertikal
+
+
+TRANSFORM PUTAR
+menggunakan properti transform: rotate() 
+berfungsi untuk membuat elemen bergerak disekitar titik yang tetap. secara default, css akan berputar disekitar
+bagian tengah elemen.
+
+nilai yang bisa  diberikan:
+
+  rotateX   adalah untuk membuat elemen berputar disekitar sumbu horizontal. jika ditambahkan dengana angle
+            nilai, jika positif, maka elemen akan bergerak searah jarum jam, jika negatif maka elemen akan
+            bergerak kearah yang berlawanan.
+  rotateY   adalah untuk memutar elemen disekitar sumbu vertikal, sama dengan rotateX jika ditambahkan angle
+            positif, maka dia akan bergerak searah jarum jam.
+  rotateZ   
+
+
+TRANSFORMASI MIRING  
+menggunakan properti transform: skew
+nilai  yang bisa digunakan adalah 
+
+  skewX     memiringkan secara horizontal
+  skewY     memiringkan secara vertikal
+
+TRANSFORMASI ASAL
+menggunakan properti transform: origin
+bekerja dengan dua kata kunci yang menunjukkan arah ( kanan dan kiri ). ia juga menggunakan nilai panjang atau kombinasi 
+kata kunci dan panjang. tiga nilai menunjukkan bahwa elemen akan memiliki efek transformasi 3d css.
+
+
+GAYA TRANSFORMASI
+menggunakan properti transform-style
+menujukkan apakah anak elemen harus berada dalam ruang 3d atau diratakan. dengan kata lain, anda menentukan apakah
+efek transformasi 3d css diteruskan ke anak atau apakah mereka muncul sebagai elemen biasa.
+
+KOTAK TRANSFORMASI
+menggunakan properti transform-box
+menunjukkan tata letak yang akan berhubungan dengan properti transform dan transform-origin. kotak ini dapat memiliki
+nilai berikut:
+
+VIEW-BOX      menjadikan viewport svg terdekat menjadi kotak referensi.
+FILL-BOX        membuat kotak pembatas objek menjadi kotak referensi.
+BORDER-BOX  menjadikan kotak batas menjadi kotak referensi.
+
+VISIBILITAS BAGIAN BELAKANG
+menggunakan  properti backface-visibility
+terkait dengan efek transformasi 3d css. ini menjukkan apakah sisi belakang elemen harus visible atau hidden. namun ini
+adalah properti eksperimental. yang berarti bahwa beberapa browser mengalami kesulitan untuk menampilkannya dengan
+benar.
+
+
+PERSPEKTIF
+menggunakan properti perspective
+menetapkan ruang 3d elemen dengan menunjukkan jarak antara bidang Z dan pengguna. nilai yang lebih kecil menciptakan
+efek yang lebih kentara karena anda semakin dekat dari bidang Z. gunakan nilai yang lebih besar untuk menghasilkan efek
+yang lebih lembut,
+
+bila anda menggunakan perspective bersama dengan css transform, properti tersebut menyetel ruang 3d, sedangkan 
+perspective properti itu sendiri membuat induk berbagi ruang 3d dengan anaknya.
+
+
+PERSPEKTIF ASAL
+menggunakan  properti perspective-origin
+digunakan untuk mengatur posisi yang dilihat pengguna. properti tidak akan berpengaruh jika anda tidak mengaturnya
+perspective dengan baik. selain itu, properti tersebut perlu ditetapkan ke elemen induknya.

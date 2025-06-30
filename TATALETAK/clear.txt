@@ -1,0 +1,10 @@
+css clear mengontrol perilaku elemen mengambang dengan mencegah tumpah tindih elemen elemen yang berurutan diatas
+elemen mengambang. nilai properti clear menentukan sisi tempat elemen mengambang tidak seharusnya mengambang, nilai 
+clear properti dapat berupa:
+none, left, right, both, inherit, inline-start, inline-end.
+
+
+APA ITU CLEARFIX:
+bila anda perlu membuat css clear float, ada baiknya menerapkan css clearfix. misalnya, bila kontainer hanya memiliki 
+elemen float, kontainer tidak akan membungkusnya dan mengecil. css clearfix memastikan bahwa  kontainer membungkus
+item float dengan membersihkan elemen turunan secara otomatis.

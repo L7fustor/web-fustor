@@ -1,0 +1,14 @@
+OPACITY
+Membuat elemen terlihat transparan. nilai opacity properti css berkisar antara 0,0(0%) - 1.0(100%)
+semakin renda nilai opacity, semakin tinggi transparansinya.
+
+OPACITY SAAT MENGGUNAKAAN KURSOR
+anda dapat mengatur opasitas gambar berdasarkan statusnya dengan menggabungkan opacity dalam properti :hover
+
+MENGATUR OPACITY DENGAN RGB DAN RGBA
+lihat penjelasan ada di background> warnabg
+
+TIPS BERGUNA
+1. anda hanya perlu menyertakannya filter: alpha(opacity=x); untuk memastikan bahwa opacity properti berfungsi 
+   di internet explorer. angka tersebut x mewakili presentase.
+2. opacity dalam css dapat diganti dengan visibility: hidden; ketika anda perlu menyembunyikan elemen sepenuhnya.

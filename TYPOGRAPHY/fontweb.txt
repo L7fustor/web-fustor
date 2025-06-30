@@ -1,0 +1,52 @@
+FONT WEB
+font yang aman untuk web diberi label aman karena tersedia di banyak komputer. font tersebut, menjamin bahwa
+konten teks akan ditampilkan sama kepada semua pengguna.
+namun font web css mengubah aturan ini dengan mengizinkan pengembang untuk mengatur file font agar diunduh saat 
+pengguna mengunjungi situs web mereka. oleh karena itu, anda dapat menggunakan font yang unik dan langka untuk
+desain web anda.
+
+FORMAT FONT BERBEDA
+menggungah font web css tidaklah sulit. ingatlah untuk mengatur jalur(url) keberkas font yang akan  dipindahkan
+ke css anda. selain itu, anda perlu menunjukkan jenis format file font untuk memastikan bahwa browser dapat 
+mengenali dan menemukan font.
+sebagai aturan, yang lebih baik adalah menempatkan format yang lebih baru seperti WOFF2 lebih dekat ke awal,
+sementara forrmat seperti TTF dapat berada diakhir deklarasi.
+
+@FONT-FACE: mengunggah font kustom
+aturan @font-face memungkinkan anda menambahkan  font khusus ke halaman web.
+aturan ini membebaskan pengembang dari penggunaan font yang disebut web-safe, dan harus menjadi yang pertama 
+dalam berkas css.
+agar @font-face berfungsi dengan baik. ia perlu memiliki properti font-family, selain itu, pengembang perlu 
+menunjukkan src atribut: jalur ke berkas font.
+
+CONTOH: 
+@font-face {
+    font-family: comicsans;
+    src: url(comicsans_light.woff);
+}
+
+div {
+    font-family: comicsans;
+}
+
+anda dapat menambahkan jalur ke berkas font dengan dau cara:
+    1. dengan menentukan berkas lokal: berfungsi  jika pengguna telah menginstal font tersebut.
+    2. dengan menentukan url: jika file lokal tidak tesedia, css mengatur agar file tsb diunduh secara otomatis
+       ke komputer.
+
+MEMBUAT FONT UNIK MENJADI TEBAL 
+
+contoh:
+
+@font-face {
+    font-family: myfont;
+    src: url(/learn/greetings-bold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: myfont;
+    src: url(/learn/greetings.ttf);
+}
+
+

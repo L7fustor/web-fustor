@@ -1,0 +1,65 @@
+BINGKAI UTAMA
+menggunakan properti @keyframes
+aturan animasi akan berubah secara bertahap ke gaya baru. bingkai utama menentukan tampilan animasi pada momen 
+tertentu. 
+
+CONTOH:
+
+@keyframes learn {
+    from {background-color: blue;}
+    to {background-color: green;}
+}
+
+div {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    animation-name: learn;
+    animation-duration: 6s;
+    border-radius: 90px;
+}
+
+anda juga dapat menggunakan nilai presentase untuk mengatur perubahan gaya secara bertahap. oleh karena itu, anda
+dapat mengendalikan gaya setiap langkah animasi.
+
+dalam contoh berikut, warna latar belakang berubah saat 30%l animasi selesai. kemudian, berubah ke warna lain saat 60%
+selesai dan mencapai warna terkahirnya saat animasi berakhir 100%.
+
+CONTOH:
+
+@keyframe learn {
+    0% {background-color: blue;}
+    30% {background-color: red;}
+    60% {background-color: purple;}
+    100% {background-color: pink;}
+}
+
+div {
+    width: 150px;
+    height: 150px;
+    background-color: blue;
+    animation-name: learn;
+    animation-duration: 6s;
+    border-radius: 90px;
+}
+
+MEMUDAR 
+salah satu contoh animasi css adalah pengaturan efek fade in untuk elemen.
+anda dapat membuat animasi fade in css dengan menggunakan @keyframe aturan untuk menentukkan opasitas dari 0
+hingga 1.
+
+CONTOH:
+
+@kkeyframes learn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+div {
+    width: 150px;
+    height: 150px;
+    background-color: salmon;
+    animation-name: learn;
+    animaton-duration: 6s;
+    border-radius: 90px;
+}

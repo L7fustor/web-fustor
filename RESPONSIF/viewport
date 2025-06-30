@@ -1,0 +1,31 @@
+VIEWPORT
+viewport css merujuk pada bagian situs web yang terlihat di jendela browser. oleh karena itu, viewport biasanya
+tidak berukuran sama dnegan halaman sebenarnya. ponsel dan perangkat lain dengan layar lebih kecil menampilkan
+halaman di jendela virtual atau viewport.
+
+masalah utama adalah layar yang lebih sempit membuat area pandang vitual  mengecil untuk menampilkan semua area 
+halaman web. oleh karena itu, beberapa situs web tidak terlihat bagus diperangkat seluler.
+
+MEMANIPULASI VIEWPORT
+anda mungkin berasumsi bahwa pengaturan media query sudah cukup untuk memperbaiki masalah ini. namun, media query
+tersebut mungkin tidak membantu jika viewport virtual tidak cocok dengan breakpoint yang ditentukan.
+oleh karena itu, anda harus mempertimbangkan untuk menetapkan tag meta viewport untuk mengubah ukuran dan skala 
+viewport.
+
+    width=device-width      bagian dari tag tersebut mengatur lebar halaman agar sesuai dengan lebar layar
+    initial-scale=1.0       bagian dari tag mengatur tingkat zoom awal halaman.
+
+contoh ini menggunakan <meta> tag viewport
+tag <meta> menerima nilai dari properti:
+
+TINGGI      mengatur tinggi viewport perangkat virtual
+LEBAR       mengatur lebar area pandang perangkat virtual
+SKALA AWAL  mengatur tingkat zoom saat halaman pertama kali dibuka
+SKALA MIN   mengatur tingkat zoom minimum yang dapat diperbesar oleh pengguna
+SKALA MAX   mengatur tingkat zoom maksimal yang dapat diperbesar oleh pengguna
+DAPAT DISKALAKAN  PENGGUNA      mengatur bendera yang memperbolehkan perangkat untuk memperbesar dan memperkecil 
+tampilan.
+
+peramban seluler mengelola perubahan orientasi secara berbeda. safari selulerr hanya memperbesar halaman saat
+orientasi berubah menjadi landscape. jika anda ingin mempertahankan pengaturan css, sertakan maximum-scale=1>
+nilai untuk mencegah perilaku ini pada peramban seluler.

@@ -1,0 +1,49 @@
+ELEMEN INLINE DAN BLOCK 
+elemen html terbagi menjadi 2 kategori utama, elemen seperti blok dan elemen sebaris
+elemen blok seperti( div, p, h1, dll ). selalu terbentang sejauh mungkin kesamping dan dimulai pada baris baru.
+elemen sebaris ( span, img, a, dll ) hanya mengambil ruang yang diperlukan. elemen tersebut tidak harus dimulai pada
+baris baru.
+
+PENGGUNAAN PROPERTI TAMPILAN
+dengan menggunakan properti css display, anda dapat menentukan secara manual jenis wadah apa yang harus digunakan 
+elemen tersebut.
+
+nilai yang bisa digunakan: 
+none                tidak ada yang terjadi
+inline               elemen tetap berada sebaris yang sama dan hany mengambil latar kontennya.
+block               elemen semua dimulai dari baris baru dan mengambil seluruh lebar yang tersedia
+inline-block      elemen ditampilkan sebagai elemen sebaris tetapi dapat diberi gaya sebgai elemen tingkat blok
+table                elemen ditampilkan sebgai elemen tiipe table
+flex                 elemen ditampilkan sebagai elemen flex sebaris tingkat blok
+inline-flex        elemen ditampilkan sebagai elemen flex sebaris
+inline-table      elemen ditampilkan sebagai elemen tabel sebaris
+run-in               elemen ditampilkan sebagai anak sebaris pertama dari elemen blok
+
+SEBARIS 
+menggunakan properti display: inline
+
+- elemen hanya megambil ruang yang diperlukan.
+- mereka juga muncul bersebelahan pada sebaris yang sama.
+- salah satu kelemahan adalah anak tidak dapat mengontrol height  properti width elemen sebaris.
+- mengabaikan display: inline pengaturan padding dan margin.
+- hanya dapat memiliki elemen sebaris.
+
+MEMBLOKIR 
+menggunakan properti block
+
+- elemen memiliki lebar sebesar mungkin 
+- setiap elemen blok muncul di baris baru
+- unsur bereaksi terhadap width dan height sifat
+- elemen dapat berisi elemen sebaris dan elemen blok
+
+BLOK SEBARIS
+menggunakan properti inline-block
+merupakan gabungan dari fitur inline dan block. perbedaan utama adalah inline-block merespons width dan height properti.
+fitur ini membuat css display: inline-block lebih cocok untuk membuat tata letak. salah satu cara yang paling populer untuk
+menggunakan elemen ini adalah membuat navigasi horizontal.
+
+MENYEMBUNYIKAN ELEMEN: TAMPILAN ATAU VISIBILITAS
+ada perbedaan dalam penggunaan visbility: hidden dan display: none . dalam contoh berikut , kita menyembunyikan elemen
+dengan display: none
+set div yang akan hilang display: none vs properti visibility: hidden.
+visibility: hidden mempertahankan elemen tapi membuatnya tidakk terlihat.

@@ -1,0 +1,99 @@
+/* MEDIA QUERY
+media query css digunakan untuk mengembangkan desain media yang responsif.
+media query ini memungkinkan anda megontrol tampilan situs web dilayar yang berbeda.
+
+spesifikasi untuk tiap layar
+0 - 480     untuk handphone mode potrait
+481-768     tablets dan handphone mode landscape
+769-1279    laptops, tablet landscape, dan dekstop kecil (monitor portable)
+1280+       dekstop landscape and big monitor
+*/
+
+/* */
+
+
+CONTOH SINTAKS DARI MEDIA QUERY
+
+/* media query for handphone*/
+@media only screen and (max-width: 480px) {}
+
+/* media query for tablet and handphone landscape */
+@media only screen and (min-width: 481px) {}
+
+/* media query for laptops, tablet landscape, dan dekstop kecil */
+@media only screen and (min-width: 769px) {}
+
+/* media query for dekstop landscape and big monitor */
+@media only screen and (min-width: 1280px) {}
+
+/* komponen media query
+terdiri dari JENIS MEDIA dan FITUR MEDIA
+
+JENIS MEDIA:
+all         cocok untuk semua perangkat
+print       cocok untuk data yang disajikan dalam mode cetak
+screen      cocok terutama untuk layar
+speech      cocok untuk ucapan synthesizer
+
+FITUR MEDIA:
+width       menetapkan lebar area tampilan yang ditargetkan
+height      menetapkan tinggi tamppilan area target
+orientation menetapkan orientasi perangkat sasaran
+resolution  menetapkan resolusi yang ditargetkan pada perangkat 
+            keluaran*/
+
+/* OPERATOR  LOGIKA
+
+anda dapat membuat query media css tingkat lanjut dengan menggunakan 
+operator logika  AND, ONLY, NOT. pengembang menggabungkan beberapa media
+query dengan memisahkan dengan KOMA
+
+AND         menggabungkan beberapa fitur media keduanya harus benar
+ONLY        menerapkan gaya properti hanya jika seluruh kueri cocok
+NOT         meniadakan kueri media dengan memberikan nilai true ketika 
+            respon seharusnya false*/
+
+
+/*TITIK HENTI UNTUK PERANGKAT DAN KONTEN
+
+titik henti css merupakan bagian penting dari desain responsif. anda menggunakan titik henti dengan media query 
+untuk menetapkan titik situs web menyesuaikan dengan lebar perangkat. oleh karena itu, anda dapat mengontrol tata
+letak situs web dengan mengubahnya sesuai dengan perangkat penggunna.*/
+
+CONTOH 
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+    [class*="col-"] {
+        width: 100%;
+    }
+}
+
+ARTINYA:
+- ketika layar lebih kecil dari 768px (misalnya smartphone atau tablet kecil), semua elemen yang memiliki class 
+yang mengandung col- akan otomatis lebarnya jadi 100% (full width)
+
+-   jadi, dilayar kecil semua kolom akan menumpuk kebawah satu2
+
+max: ketika layar lebih kecil
+min: ketika layar lebih besar
+
+CONTOH: 
+
+@media ( min-width: 200px ) {
+    body {
+        background: orange;
+    }
+}
+"berarti jika ukuran layar lebih besar dari 200px maka body akan berubah menjadi orange

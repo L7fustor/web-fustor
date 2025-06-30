@@ -1,0 +1,76 @@
+WARNA TEKS:
+menggunakan properti color:
+-   menggunakan nama warna(red,green,blue)
+-   menggunakan nilai rgb(0,0,0)
+-   menggunakan nilai hex(#ffffff)
+
+PERATAAN TEKS:
+menggunakan properti text-align:
+KIRI        teks anda akan muncul di sisi kiri halaman(default)
+KANAN       teks anda akan muncul di sisi kanan halaman
+TENGAH      teks anda muncul ditengah halaman
+MEMBENARKAN teks akan direngangkan, sehingga setiap baris memiliki lebar yang sama
+
+DEKORASI TEKS:
+menggunakan properti text-decoration:
+NONE         tidak ada garis(default)
+LINE-THROUGH garis berada ditengah teks
+OVERLINE     garis berada diatas teks
+UNDERLINE    garis berada dibawah teks
+
+TEKS TRANSFORM:
+menggunakan properti teks-transform:
+UPPERCASE     teks akan menjadi besar semua
+LOWERCASE     teks akan menjadi kecil semua
+CAPITALIZE    semua huruf pertama dari tiap kata akan menjadi besar
+
+TEKS INDENT:
+menggunakkan properti teks-ident:
+teks indent menerima nilai( cm,pt,px,dst )
+
+SPASI HURUF:
+Menggunakan properti letter-spacing
+nilai yang digunakan bisa ( cm,pt,px,dst )
+
+SPASI KATA:
+menggunakan properti word-spacing:
+nilai yang digunakan bisa ( cm,pt,px,dst )
+jarak untuk kata terdiri dari positif dan negatif(-)
+
+TINGGI GARIS:
+menggunakan properti line-height:
+nilai yang digunakan bisa ( cm,pt,px,dst )
+bisa menggunakan angka reguler (yang melambangkan jumlah garis yang membentuk garis tinggi)
+
+ARAH:
+menggunakan properti direction:
+  -ltr    dari kiri ke kanan
+  -rtl    dari kanan ke kiri
+
+BAYANGAN TEKS:
+menggunakan properti text-shadow:
+nilai yang digunakan bisa ( cm,pt,px,dst )
+terdiri dari:
+h-bayangan      panjang bayangan horizontal. jelaskan nilainya dengan menggunakan parameter panjang( cm,pt,px,dll)
+bayangan-v      tinggi bayangan vertikal.  jelaskan nilainya dengan menggunakan parameter panjang( cm,pt,px,dll). diperlukan
+radius blur     menentukan radius blur.  jelaskan nilainya dengan menggunakan parameter panjang( cm,pt,px,dll). diperlukan
+warna           menentukan warna bayangan. jelaskan menggunakan nama warna, nilai rgb, atau hex. jika tidak disertakan, warnanya hitam
+
+TEKS MELUAP:
+menggunakan properti text-overflow:
+text-overflow terdiri dari( ellipsis, dan clip)
+nilai yang bisa digunakan(normal, anywhere, break-word, inherit)
+
+NORMAL      kata katanya yang terputus ditempat standar
+anywhere    kata kata yang dipisahkan pada titik manapun untuk mencegah luapan. css mempertimbangkan peluang soft wrap
+            dari kata tersebut saat memperkirakan ukuran intrinsik konten minimum.
+break-word  sama dengan anywhere tetapi css tidak mempertimbangkan peluang soft wrap
+inherit     elemen mengambil overflow-wrap nilai dari induknya
+
+KATA PEMISAH:
+menggunakan properti word-break:
+nilai yang bisa digunakan (normal, break-all, keep-all)
+
+NORMAL      aturan jeda baris default
+BREAK-ALL   mencegah luapan dengan menyisipkan jeda diantara 2 karakter (tidak berlaku untuk karakter jepang/korea/cina)
+KEEP-ALL    tidak ada kata yang terputus untuk teks korea/jepang/cina. teks lainnya berlaku normal.

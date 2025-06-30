@@ -1,0 +1,39 @@
+TRANSISI 
+memiliki 4 properti dalam 1 deklarasi
+
+transition-property     ia menetapkan satu atau beberapa properti untuk memiliki efek transisi. misalnya dapat 
+                        berubah warna latar atau offset garis luar.
+transition-duration     ini menunjukkan berapa lama transisi akan berlangsung
+transition-timing-      ia dapat mengubah kecepatan transisi selama durasinya, misalnya ia dapat masuk atau 
+function                keluar dengan mudah.
+transition-delay        ini menunda dimulainya transisi
+
+KURVA KECEPATAN     
+menggunakan properti transition-timing-function:
+menentukan kurva kecepatan animasi, anda dapat memutuskan apakah trnasisi css lebih cepat atau lebih lambat
+di awal, tengah, akhir, dan seterusnya.
+
+ease            transisi berlangsung lebih lambat di awal, menjadi cepat ditengah, lalu berkahir lambat.
+linear          kecepatannya tetap sama sepanjang seluruh transisi.
+ease-in         transisi dimulai secara perlahan, kemudian menjadi lebih cepat.
+ease-in-out     suatu transisi dimulai dan diakhiri secara perlahan.
+cubic-bezier    kurva kecepatan transisi ditentukan secara spesifik oleh anda.
+(n,n,n,n)
+
+contoh:
+
+div1 {transition-timing-function: ease;}
+div2 {transition-timing-function: linear;}
+div3 {transition-timing-function: ease-out;}
+div4 {transition-timing-function: ease-in;}
+div5 {transition-timing-function: ease-in-out;}
+
+EFEK PENUNDAAN
+menggunakan properti transition-delay
+nilai yang bisa diberikan yaitu detik, masuk
+
+TIPS BERGUNA
+1. tidak semua properti css dapat dianimasikan. periksa tautan inin untuk daftar lengkap properti transition
+   diterima oleh properti css
+2. penggunaan transisi css dapat menyelamatkan pemula dari kehausan menggunakan javascript untuk membuat
+   animasi sederhana.

@@ -1,0 +1,11 @@
+SHADOW
+
+BAYANGAN KOTAK
+menggunakan properti box-shadow 
+
+BAYANGAN TEKS
+menggunakan properti text-shadow
+
+TIPS BERGUNA
+1. efek bayangan css sjuga berfungsi dengan penyeleksi seperti ::first-letter
+2. jika elemen memiliki border properti border-radius, bayangan css juga menjadi bulat

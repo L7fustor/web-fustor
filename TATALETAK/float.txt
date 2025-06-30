@@ -1,0 +1,29 @@
+FLOAT
+menggunakan properti FLOAT
+properti css memengaruhi tata letak elemen lainnya. konten teks dari gambar mengelilingi elemen yang mengambang.
+jika anda memiliki beberapa elemen HTML dalam satu wadah, anda mungkin perlu menentukan bagaimana cara 
+mengapungkannya. properti float csss umumnya digunakan untuk membungkus teks disekitar gambar. namun, properti ini
+juga dapat digunakan untuk elemen lain.
+
+nilai yang dapat digunakan:
+- left                  elemen mengapung di sisi kiri
+- right                elemen mengapung di sisi kanan
+- none                 elemen tidak mengapung
+- inline-              elemen yang mengapung di sisi awal blok  yang memuatnya.
+   start
+- inline-              elemen yang mengapung di sisi akhir blok yang memuatnya.
+   end
+
+   MENIRU MENGAPUNG: TENGAH
+   anda dapat menggunakan kombinasi properti untuk memperoleh hasil yang serupa.
+   salah satu pilihannya adalah menggunakan display: flex dan justify content: center
+
+
+   MENGENDALIKAN  LUAPAN
+   jika elemen mengambang lebih tinggi daripada elemen yang memuatnya. maka elemen mengambang tersebut akan keluar
+   dari wadahnya. anda dapat memperbaiki masalah ini dengan overflow  properti. jika dipasangkan dengan nilai auto, properti
+   tersebut akan merentangkan wadah agar cukup besar untuk elemen mengambang.
+
+   TIPS BERGUNA
+   - float properti css tidak berfungsi jika elemen memiliki display: none.
+   - jika float properti memiliki inherit nilai, elemen menerima nilai float dari induknya.

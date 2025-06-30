@@ -1,0 +1,24 @@
+SISTEM GRID
+grid css didasarkan pada pemisahan tata letak mejadi kolom dan baris. menggunakan modul tata letak grid adalah 
+cara termudah untuk mendesain situs web responsif. tata letak grid biasanya terdiri dari 12 kolom, tetapi biasa
+juga lebih.
+
+menggunakan properti display: grid;
+
+PROPERTI UNTUK GRID
+
+DISPLAY
+GRID-TEMPLATE-COLUMNS
+GRID-TEMPLATE-ROWS
+GRID-TEMPALTE-AREAS
+GRID-TEMPLATE
+GRID-COLUMN-GAP
+GRID-GAP
+JUSTIFY-ITEMS
+PLACE-ITEMS
+JUSTIFY-CONTENT
+ALIGN-CONTENT
+PLACE-CONTENT
+GRID-AUTO-COLUMNS
+GRID-AUTO-ROWS
+

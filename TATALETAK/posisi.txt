@@ -1,0 +1,35 @@
+STATIS
+menggunakan nilai properti static
+properti left, right, top, bottom, z-index, tidak mempengaruhi elemen statis.
+
+RELATIF
+menggunakan nilai properti relative
+berarti bahwa suatu elemen mengikuti alur dokumen yang teratur, lalu bergeser realtif terhadap  dirinya sendiri menurut
+top, right, bottom, left.
+
+penjelasan diatas terdengar membingungkan bagi pemula. jika anda mengatur posisi elemen relative tanpa atribut seperti 
+top dan bottom, properti ttersebut hanya akan menjadi static.
+namun jika anda mengatur posisi css relative ke top: 30px, posisi elemen akan berpindah 30 piksel kek bawah dari posisi 
+biasanya.
+
+
+TETAP 
+menggunakan nilai properti fixed
+elemen tersebut akan dihilangkan dari alur dokumen yang biasa. elemen lain akan sepenuhnya mengabaikan elemen yang
+memiliki posisi tersebut fixed.
+
+
+STICKY
+menggunakan nilai properti STICKY
+menetapkan elemen sebagai relative. namun, elemen menjadi fixed ketika elemen mencapai lokasi tertentu selama
+pengguliran.
+
+MUTLAK
+menggunakan nilai properti absolute
+menujukkan bahwa  suatu elemen dihilangkan dari alur dokumen yang biasa. elemen lain mengabaikan elemen dengan 
+absolute posisi tersebut.
+absolute dapat memiliki posisi top, left, right, bottom
+
+TIPS BERGUNA
+- elemen yang memiliki inherit posisi mengambil properti posisi dari induknya.
+- pengaturan posisi statis secara manual terjadi saat anda perlu mengesampingkan properti pemosisian lainnya.

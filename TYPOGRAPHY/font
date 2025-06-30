@@ -1,0 +1,23 @@
+KELUARGA FONT:
+menggunakan properti font-family:
+
+
+GAYA HURUF:
+menggunakan properti font-style:
+nilai yang bisa digunakan (normal, miring, miring(teks))
+
+UKURAN FONT:
+menggunakan properti font-size:
+nilai yang bisa digunakan ( cm,pt,px,dst )
+
+BERAT FONT:
+properti yang digunakan font-weight:
+nilai yang bisa diberikan menggunakan kata kunci( normal, bold, lighter)
+dan munggunakan number (menerima dari angka 1 sampai 1000) semakin tinggi angkanya, semakin tebal fontnya
+
+VARIAN FONT:
+menggunakan properti font-varian:
+nilai yang diberikan bisa:
+ALL-SMALL-CAPS      menampilkan huruf kecil untuk huruf besar dan kecil.
+PETITE-CAPS         menampilkan huruf kapital kecil. jika font tidak memiliki fitur ini, huruf akan terlihat sampai seperti all-small-CAPS
+ALL-
