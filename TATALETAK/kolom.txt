@@ -55,5 +55,3 @@ digunakan untuk mengatur dan menyeimbangkan konten dalam kolom. fungsi ini mener
 balance         setiap kolom memiliki jumlah konten yang sama ( tidak bisa lebih tinggi dari tinggi yang ditentukan )
 auto              mengatur konten ke dalam kolom hingga mencapai tinggi. tindakan ini dilakukan hingga konten berakhir
 
-
-DAFTAR LENGKAP 
