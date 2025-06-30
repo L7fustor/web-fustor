@@ -1,0 +1,32 @@
+KONSEP VIEWPORT 
+viewport css merujuk pada bagian situs web yang terlihat di jendela  browser. oleh karen itu, viewport biasanya tidak 
+berukuran sama dengan halaman sebenarnya. ponsel dan perangkat lain dengan layar yang lebih kecil menampilkan halaman 
+dijendela virtual atau viewport. masalah utama nya adalah dilayar yang lebih sempit membuat area pandang  virtual mengecil 
+untuk menampilkan  semua area halaman web. oleh karena itu, beberapa situs web tidak terlihat bagus diperangkat seluler.
+
+
+MEMANIPULASI VIEWPORT
+anda mungkin berasumsi bahwa pengaturan media query sudah cukup untuk memperbaiki masalah ini. namun, medai query
+tersebut mungkin tidak hanya membantu jika viewprt virtual tidak cocok dengan breakpoint yang ditentukan. 
+oleh karena itu, anda harus mempertimbangkan untuk menetapkan tag meta viewprt untuk mengubah ukuran dan skala
+viewport.
+
+width=device-width      bagian dari tag tersebut mengatur lebar halaman agar sesuai dengan lebar layar.
+initial-scale=1.0             bagian dari tag mengatur tingkat zoom awal halaman.
+
+pengaturan ini memberi tahu browser untuk menampilkan situs web dengan lebar perangkat yang digunakan. oleh karena itu, 
+jika lebar layar 320px, jendela browser akan sama.
+
+CATATAN:  jika situs web anda tidak dibuat responsif, anda sebaiknya tidak menggunakan <meta> karena dapat 
+                    menimbulkan masalah.
+
+tag viewport css <meta> menerima properti berikut:
+height                  mengatur tinggi viewport perangkat virtual
+width                   mengatur lebar area pandang perangkat virtual
+initial-scale          mengatur tingkat zoom saat halaman pertama kali dibuka
+minimum-scale      mengatur tingkat zoom minimum yang dapat diperbesar oleh pengguna
+user-scalable        mengatur bendera yang memperbolehkan perangkat untuk memperbesar dan memperkecil tampilan
+
+peramban seluler mengelola perubah norientasi secar berbeda. safari seluler hanya memperbesar halaman saat orientasi
+berubah menjadi landscape. jika anda ingin mempertahankan pengaturan skala css, sertakan maximum-scale=1> nilai untuk
+mencegah perilaku ini pada peramban seluler.
