@@ -1,55 +1,38 @@
-@media (min-width: 480px) {
-  body {
-    background: yellow;
-  }
+body {
+  
 }
 
-@media (max-width: 481px) {
-  body {
-    background: limegreen;
-  }
-}
-
-.container ul {
+.container {
   background: orange;
+  padding: 15px 30px;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 10px;
-  margin: 10px;
-  padding: 15px;
+  align-items: centerl;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 40px;
+  mergin-right: 15px;
+}
+
+.greeting {
+  font-weight: bold;
+}
+
+.link {
   list-style: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-a:hover {
-  background: green;
-  color: red;
-  transition: all .3s ease;
-  padding: 7px;
-  border-radius: 20px;
-}
-
-.img {
   display: flex;
-  justify-content: center;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
 }
 
-.img:hover {
-  background: purple;
+.link li a {
+  text-decoration: none;
+  color: blue;
+  font-weight: bold;
 }
 
-.teks {
-  text-align: center;
-  background: lightblue;
-  font-size: 20px;
+.link li a:hover {
+  color: red;
 }
-
-.teks:hover {
-  background: gray;
-  font-size: 50px;
-}
-
