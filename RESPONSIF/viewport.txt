@@ -30,3 +30,4 @@ user-scalable        mengatur bendera yang memperbolehkan perangkat untuk memper
 peramban seluler mengelola perubah norientasi secar berbeda. safari seluler hanya memperbesar halaman saat orientasi
 berubah menjadi landscape. jika anda ingin mempertahankan pengaturan skala css, sertakan maximum-scale=1> nilai untuk
 mencegah perilaku ini pada peramban seluler.
+

@@ -1,0 +1,118 @@
+MEMBUAT SISTEM GRID
+didasarkan pada pemisahan tata letakk menjadi kolom baris menggunakkan modul tata letak grid adalah cara termudah
+untuk mendesain situs web responsif. tata letak grid biasanya terdiri dari 12 kolom, tetapi bisa juga lebih.
+
+CONTOH MEMBUAT SISTEM GRID CSS  
+mengatur display: grid
+tetapkan ukuran baris dan kolom dengan grid-template-columns dan grid-template-columns.
+
+.example {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 100px 100px;
+}
+
+div {
+    border: solid 2px green;
+    padding: 5px;
+    margin: 3px;
+}
+
+contoh berikut menerapkan grid css responsif yang berbeda:
+
+.example {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-rows: 100px 100px;
+    grid-gap: 10px;
+    background-color: #fff;
+    color: #444;
+}
+
+div {
+    backgorund-color: purple;
+    color: #fff;
+    border-radius: 10px;
+    padding: 25px;
+    font-size: small;
+}
+
+
+PERBEDAAN CSS GRID DAN FLEXBOX
+ada beberapa perbedaan utama antara sistem tampilan grid css dan flexbox:
+
+- tata letak grid adalah sistem dua dimensi. ide ini berarti bahwa grid berfungsi dengan baris dan kolom. namun, flexbox 
+   bersifat satu dimensi dan berfungsi dengan kolom atau baris.
+- grid sangat cocok untuk membuat tata letak berskala besar, sedangkan flexbox lebih cocok untuk tata letak berskala  
+  kecil.
+- grid berorientasi pada tata letak, sendangkan flexbox berorientasi pada konten. jika anda tidak yakin tentang konten
+   situs web, anda harus memilih grid ( jika anda tidak yakin, pilih flexbox ).
+- grid sangat cocok untuk membuat tata letak berskala besar, sedangkan flexbox lebih cocok untuk tata letak berskala
+   kecil.
+- untuk menetukan kolom atau baris, anda harus menggunakan flexbox. namun, ketika anda perlu membuat grid dan 
+   memasukkan konten ke dalam dua dimensi, grid adalah jawabannya.
+
+
+PERBEDAAN GRID DAN BOOTSTRAP
+anda dapat menggunakan modul grid css dan bootstrap untuk membuat tata letak halaman anda. namun, kami sarankan 
+anda mempertimbangkan untuk menggunakan grid sebelum  beralih ke bootstrap. berikut alasannya:
+
+- kode grid lebih mudah dikelola karena HTML dan css tetap terpisah. bootstrap membungkus setiap baris div dan
+   menggunakan beberapa kelas.
+- mengubah tata letak dalam grid mudah dilakukan karena anda tidak perlu mengubah kode HTML. fleksibilitas meningkat
+   setelah anda menambahkan media query.
+- bootstrap menawarkan tata letak 12 kolom. grid memungkinkan anda membuat baris dan kolom sebanyak yang anda
+   inginkan.
+
+
+MEMBANGUN TATA LETAK TANPA GRID
+untuk membuat tata letak, anda harus menyetel properti box-sizing ke border-box untuk semua elemen HTML. properti
+ini mengonfirmasi bahwa border dan padding disertakan dalam dimensi total elemen ini.
+
+contoh berikut menunjukkan situs web responsif sederhana yang terdiri dari dua kolom:
+
+.firstC {
+    width: 60%;
+    float: left;
+    border:  solid #a4508b 5px;
+    padding: 10px;
+}
+
+.secondC {
+    width: 40%;
+    float: left;
+    border: solid #2f004f 5px;
+    padding: 10px;
+}
+
+contoh berikut membuat tata letak responsif yang memiliki lima kolom. pertama, anda harus menetukan jumlaah width 
+setiap kolom. kami memilih 25% 25% 25% 25% 100%. lalu, anda membuat kelas css untuk setiap kolom.
+
+.c-1 {width: 25%; }
+.c-2 {width: 25%; }
+.c-3 {width: 25%; }
+.c-4 {width: 25%; }
+.c-5 {width: 100%; }
+
+pada contoh berikutnya, kita membuat semua kolom ( c- ) melayang ke kiri, dan menambahkan padding 5px:
+
+[class*="c-"] {
+    float: left;
+    border: solid #a4508b 5px;
+    padding: 5px;
+}
+
+kolom2 dalam satu baris akan bergerak ke kiri dan tidak terpengaruh oleh alur normal halaman. elemen2 lain akan salah
+tempat karena alur tersebut. oleh karena itu, kita harus membuat gaya untuk menghapusnya:
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+TIPS YANG BERGUNA
+- grid css bukanlah framework. grid merupakan fitur bawaan css dan didukung oleh semua browser modern.
+- jalur grid css merujuk pada spasi antara dua baris pada grid.
+- fungsi ini repeat () membantu menangani grid dengan banyak trek dengan mengulang semua atau sebagian daftar trek.
