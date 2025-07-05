@@ -1,38 +1,38 @@
+* {
+ 
+  box-sizing: content-box;
+}
+
 body {
-  
+  font-family: sans-serif;
 }
 
 .container {
-  background: orange;
-  padding: 15px 30px;
   display: flex;
-  align-items: centerl;
+  align-items: center;
   justify-content: space-between;
+  background: orange;
+  padding: 10px 20pxx;
 }
 
-.logo {
-  height: 40px;
-  mergin-right: 15px;
-}
-
-.greeting {
-  font-weight: bold;
-}
-
-.link {
-  list-style: none;
+.left {
   display: flex;
+  align-items: center;
   gap: 10px;
-  margin: 0;
-  padding: 0;
 }
 
-.link li a {
+.left img {
+  width: 80px;
+  height: 80px;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+a {
   text-decoration: none;
   color: blue;
-  font-weight: bold;
-}
-
-.link li a:hover {
-  color: red;
 }
