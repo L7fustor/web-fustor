@@ -1,0 +1,63 @@
+PENGANTAR FLEXBOX
+struktur tata letak fleksibel didasarkan pada pembagian elemen menjadi wadah( elemen induk ) dan item 
+( elemen anak ).
+menetapkan properti ke elemen induk lebih produktif daripada menetapkannya ke setiap elemen anak secara
+individu. properti ini memungkinkan pengorganisasian item di dalam wadah ( beberapa berlaku untuk elemen
+induk yang lain berlaku untuk elemen anak ).
+
+flexbox css dapat mengontrol aspek tata letak berikut ini:
+- arah dimana item ditampilkan 
+- pembungkusan item saat jendela diubah ukurannya
+- pembenaran item dan ruang diantaranya
+- penyebaran item vertikal 
+- penyelarasan garis item
+- urutan item dalam satu baris
+- kemampuan item untuk tumbuh atau menyusut saat jendela diubah ukurannya.
+- penyelarasan item individual
+
+SUMBU FLEXBOX
+flexbox css memiliki dua sumbu: sumbu utama,  dan sumbu silang,
+- anda dapat menentukan sumbu utama dengan flexbox-direction properti. properti ini memiliki empat 
+  kemungkinan nilai: row, row-reverse, column, dan column reverse.
+- sumbu silang selalu tegak lurus menuju sumbu utama. jika sumbus utama memiliki arah row atau row-
+  reverse, sumbu silang berjalan sepanjang arah column atau column-reverse( dan sebaliknya )
+
+WADAH FLESIBEL ( CONTAINER FLEXBOX)
+wadah css fleksibel adalah elemen yang memiliki properti tampilan yang ditetapkan ke flex atau inline-flex
+kemudian, semua anak wadah menjadi barang fleksibel.
+oleh karena itu, wadah fleksibel css menentukan ukuran, peran, dan posisi untuk anak-anaknya.
+
+setiap wadah fleksibel awalnya memiliki nilai default berikut:
+- flex-direction: row;
+- justify-content: flex-start;
+- align-items: strecth;
+- align-content: stretch;
+- flex-basis: auto;
+- flex-wrap: nowrap;
+
+wadah mendistribusikan item item lainnnya dalam satu baris, dan ukuran konten menetukan ukurannya dalam 
+satu baris dan ukuran konten menentukan ukurannya pada sumbu utama. jika ada lebih banyak item daripada
+yang ditampung wadah, item item tersebut akan meluap ( tidak membungkus ) selain itu, jika beberapa item
+memiliki tinggi yang lebih besar dari yang lain, item yang lebih kecil akan menrengang agar sesuai dengan
+item tertinggi.
+lembar cetakan flexbox ini menjelaskan semua properti untuk mengendalikan kontainer flex.
+
+ARAH FLEKSIBEL ( FLEX-DIRECTION )
+menggunakan properti css flex-direction
+menetapkan posisi item flex dan arah pergerakan sumbu utama. 
+berdasarkan arah yang ditentukan ( baris dan kolom ), sumbu utama bisa berupa horizontal atau vertikal.ia 
+juga secara otomatis mengatur sumbu silang, yaitu sumbu tegak lurus terhadap sumbu utama.
+
+contoh css flex berikut menunjukkan bagaimana flex-direction perubahan pada wadah flex item-item lainnya
+
+flex-direction: column arah item fleksibel adalha dari atas kebawah.
+flex-direction: row arah item fleksibel adalah dari kiri ke kanan.
+flex-direction: row-reverse arah item fleksibel kanan ke kiri
+
+BUNGKUS WRAP ( FLEX-WRAP )
+menggunakan properti css flex-wrap
+menetukan bagaimana kontainer berperilaku saat memiliki terlalu banyak item. nilai flex-wrap yang mungkin
+adalah nowrap. wrap, dan wrap-reverse
+
+flex-wrap: wrap item berpindah ke baris berikutnya ( dari atas kebawahm kiri ke kanan )
+flex-wrap: nowrap item tidak terbungkus sebaliknya, item menyusut atau meluap dari wadah.

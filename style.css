@@ -1,38 +1,46 @@
 * {
- 
-  box-sizing: content-box;
-}
-
-body {
-  font-family: sans-serif;
+  box-sizing: border-box;
 }
 
 .container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   background: orange;
-  padding: 10px 20pxx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .left {
   display: flex;
   align-items: center;
   gap: 10px;
+  margin-left: 10px;
 }
 
-.left img {
-  width: 80px;
-  height: 80px;
+img {
+  width: 40px;
+  height: 40px;
 }
 
 ul {
   display: flex;
   list-style: none;
-  gap: 20px;
+  gap: 10px;
 }
 
-a {
+ a {
   text-decoration: none;
-  color: blue;
+  margin-right: 10px;
+}
+
+a:hover {
+  background: white;
+  transition: all 0.3s ease;
+  border-radius: 20px;
+  padding: 7px;
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .container {
+    background: lightgreen;
+  }
 }
