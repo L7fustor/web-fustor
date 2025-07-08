@@ -3,10 +3,10 @@
 }
 
 .container {
-  background: orange;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background: orange;
 }
 
 .left {
@@ -22,25 +22,24 @@ img {
 }
 
 ul {
-  display: flex;
   list-style: none;
+  display: flex;
   gap: 10px;
 }
 
- a {
+a {
   text-decoration: none;
-  margin-right: 10px;
 }
 
 a:hover {
-  background: white;
+  background: lightblue;
+  color: blue;
   transition: all 0.3s ease;
   border-radius: 20px;
   padding: 7px;
 }
 
-@media (min-width: 481px) and (max-width: 768px) {
-  .container {
-    background: lightgreen;
-  }
+.center {
+  display: flex;
+  font-family: sans-serif;
 }
